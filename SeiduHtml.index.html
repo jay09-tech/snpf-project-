@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNPF Sierra Leone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #FDFBF7; }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#E5E0D8] sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between h-20 items-center">
+            <div class="flex items-center gap-3 cursor-pointer">
+                <div class="w-10 h-10 bg-[#1B5E20] rounded-xl flex items-center justify-center text-[#FFC107] shadow-lg rotate-3">
+                    <i data-lucide="award"></i>
+                </div>
+                <span class="text-xl font-black text-[#1B5E20]">SNPF</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6" id="nav-links">
+                <button class="text-[#1B5E20] font-bold px-3 py-2 bg-[#1B5E20] text-white rounded-lg flex items-center gap-2">
+                    <i data-lucide="home" size="16"></i> Home
+                </button>
+                </div>
+        </div>
+    </nav>
+
+    <main id="app-content">
+        <section class="relative h-[650px] flex items-center justify-center bg-[#1B5E20] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&q=80&w=1920" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay" alt="hero">
+            <div class="relative z-10 text-center px-4 max-w-4xl space-y-8">
+                <span class="bg-[#FFF8E1] text-[#F57F17] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Established 2021</span>
+                <h1 class="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter">Progress, <br> One Story <br> At A Time</h1>
+                <p class="text-xl md:text-2xl text-[#C8E6C9] italic">“Bridging our history and our future, from Nimikoro to Freetown.”</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <button class="bg-[#FFC107] text-[#1B5E20] px-12 py-5 rounded-2xl font-black text-xl shadow-2xl hover:scale-105 transition-all">Explore Journal</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 py-16" id="post-grid">
+            </div>
+    </main>
+
+    <footer class="bg-[#1B5E20] text-white pt-24 pb-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-4xl font-black mb-6">SNPF SIERRA LEONE</h3>
+            <p class="text-[#A5D6A7] uppercase tracking-widest text-xs">© 2026 Seidu Nimikoro Progressive Family</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
